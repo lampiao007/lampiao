@@ -1,0 +1,37 @@
+import math
+
+def calcular_tangente(angulo_graus):
+    # Converte o ângulo de graus para radianos
+    angulo_radianos = math.radians(angulo_graus)
+    # Calcula a tangente do ângulo
+    tangente = math.tan(angulo_radianos)
+    return tangente
+
+# Solicita ao usuário que informe o ângulo em graus
+angulo = float(input("Digite o ângulo em graus: "))
+resultado = calcular_tangente(angulo)
+
+print(f"A tangente de {angulo} graus é: {resultado}")
+
+
+
+
+
+
+Explicação do código
+Importação do módulo math: Primeiro, importamos o módulo math do Python, que contém várias funções matemáticas, incluindo tan para calcular a tangente e radians para converter graus em radianos.
+
+Função calcular_tangente:
+
+Esta função recebe o ângulo em graus como argumento.
+Converte o ângulo de graus para radianos usando math.radians(), pois a função math.tan() calcula a tangente de um ângulo em radianos.
+Em seguida, calcula a tangente usando math.tan() e retorna o valor.
+Entrada do usuário: Solicita que o usuário digite o valor do ângulo em graus.
+
+Exibição do resultado: Calcula a tangente e exibe o resultado na tela com uma mensagem formatada.
+
+Como usar
+Execute o código em um ambiente Python.
+Digite o ângulo desejado em graus quando solicitado.
+O programa converterá o ângulo para radianos, calculará a tangente e mostrará o resultado.
+Essa calculadora de tangente é útil para resolver problemas de trigonometria onde é necessário o valor da tangente para um ângulo específico
